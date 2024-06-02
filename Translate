@@ -1,39 +1,12 @@
-body {
-            font-family: Arial, sans-serif;
-            background-color: #0092FF;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            width: 70%;
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            padding: 30px;
-        }
-
-        .input-field, .output-field {
-            width: 100%;
-            padding: 19px;
-            border: 2px solid #ccc;
-            border-radius: 5px;
-            font-size: 26px;
-            outline: none;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-            transition: border-color 0.4s ease;
-        }
-
-        .input-field:focus {
-            border-color: #4285f4;
-        }
-
-        .output-field {
-            background-color: #e9ecef;
-            border-color: #dee2e6;
-            color: #495057;
-        }
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العلم نور</title>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/shamo74/Yezidi-Language/Yezidi-Translate/styles.css"> <!-- ربط ملف CSS خارجي -->
+</head>
+<body>
+    <h1 class="noor">العلم نور</h1> <!-- إضافة النص وتعيين فئة CSS -->
+</body>
+</html>
