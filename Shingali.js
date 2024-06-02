@@ -1,16 +1,23 @@
-<script>
-        function translateText() {
-            const translations = {
-                "مرحبا": "hello",
-                "شلونك": "يا هلا",
-                "جدكي": "بطال",
+// تحديد الكلمات المترجمة
+const dictionary = {
+    "كلمة1": "ترجمة1",
+    "كلمة2": "ترجمة2",
+    // يمكنك إضافة المزيد من الكلمات وترجماتها هنا
+};
 
-                    "كيفك":"بخير",
-                "كيفك": "how are you"
-            };
-            
-            let inputText = document.getElementById("inputField").value.trim();
-            let outputText = translations[inputText] || "ترجمة";
-            document.getElementById("outputField").value = outputText;
+// التحقق من تغيير النص في حقل الإدخال
+document.getElementById('inputField').addEventListener('input', function() {
+    const inputText = this.value.trim();
+    const outputField = document.getElementById('outputField');
+    
+    if (inputText !== '') {
+        // التحقق مما إذا كانت الكلمة موجودة في القاموس
+        if (dictionary.hasOwnProperty(inputText)) {
+            outputField.textContent = dictionary[inputText];
+        } else {
+            outputField.textContent = 'لا توجد ترجمة';
         }
-    </script>
+    } else {
+        outputField.textContent = '';
+    }
+});
